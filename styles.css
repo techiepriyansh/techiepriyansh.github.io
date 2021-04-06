@@ -6,18 +6,18 @@ html {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
+/*colors #151d21 to #2d2d2d*/
+
 body {
-  font: 35px 'Roboto Thin';
+  font: 2.2rem 'Roboto Thin';
   padding: 0;
   margin: 0;
   background: #151D21;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url('bg.png');
+  background-image: linear-gradient(to bottom right, #2d2d2d, #151d21);
+  /*background-image: url('images/bg.png');*/
   color: white;
 }
 
@@ -46,7 +46,7 @@ header {
 }
 
 #nav {
-  font-size: 30px;
+  font-size: 1.8rem;
 }
 
 header ul {
@@ -71,18 +71,41 @@ header a:hover {
 
 #alias {
   padding: 10px;
-  font: 25px 'Train One', cursive;
+  font: 1.6rem 'Train One', cursive;
 }
 
 #me h1{
-  padding: 0;
-  margin: 0;
   font-size: 5rem;
-  color: #ff7a7a;
 }
 
-#tags span {
+.dot {
   color: #ff7a7a
+}
+
+#tag1 {
+  opacity: 0;
+  animation: appear 2s ease-out 0.5s;
+  animation-fill-mode: forwards;
+}
+#dot1 {
+  opacity: 0;
+  animation: appear 0s linear 2.5s;
+  animation-fill-mode: forwards;
+}
+#tag2 {
+  opacity: 0;
+  animation: appear 2s ease-out 2.5s;
+  animation-fill-mode: forwards;
+}
+#dot2 {
+  opacity: 0;
+  animation: appear 0s linear 4.5s;
+  animation-fill-mode: forwards;
+}
+#tag3 {
+  opacity: 0;
+  animation: appear 2s ease-out 4.5s;
+  animation-fill-mode: forwards;
 }
 
 .container h1{
@@ -90,3 +113,29 @@ header a:hover {
   margin: 0;
   color: #ff7a7a;
 }
+
+#about {
+  background: rgba(158,158,158,0.25);
+}
+
+
+@keyframes appear{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@media only screen and (max-width: 525px) {
+  #me h1{
+    font-size: 4.4rem;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  #tags {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
