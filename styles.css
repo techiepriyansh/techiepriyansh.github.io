@@ -168,12 +168,12 @@ header a:hover {
 #alias {
   padding: 10px;
   font: 1.6rem 'Train One', cursive;
+  animation: flicker 3s linear 2s infinite;
 }
 
 
 #me h1{
   font-size: 6rem;
-  animation: flicker 3s linear 2s infinite;
 }
 
 .dot {
