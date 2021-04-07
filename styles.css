@@ -40,7 +40,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  transform: translateX(30%);
+  transform: translate(30%, 0);
 }
 
 #moon {
@@ -63,7 +63,7 @@ body {
 }
 
 #cloud1 {
-  transform: translate(80%, 0);
+  transform: translate(70%, 0);
 }
 
 #cloud2 {
@@ -137,7 +137,7 @@ header a:hover {
 }
 
 #me h1{
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .dot {
