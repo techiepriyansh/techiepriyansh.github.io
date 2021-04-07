@@ -195,7 +195,7 @@ header a:hover {
 }
 #dot2 {
   opacity: 0;
-  animation: appear 0.5s linear 1.5s;
+  animation: appear 0s linear 1.5s;
   animation-fill-mode: forwards;
 }
 #tag3 {
