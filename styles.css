@@ -29,6 +29,8 @@ body {
 
   display: flex;
   flex-direction: column;
+
+  pointer-events: none;
 }
 
 
@@ -41,16 +43,20 @@ body {
   justify-content: center;
   height: 100vh;
   transform: translate(25%, 5%);
+
+  pointer-events: none;
+}
+
+img {
+  pointer-events: auto;
 }
 
 #moon {
   width: 50%;
-  /*opacity: 0.5;*/
   transition: transform 250ms ease-out, opacity 250ms ease-out;
 }
 
 #moon:hover {
-  opacity: 0.8;
   transform: scale(1.1);
 }
 
@@ -73,6 +79,7 @@ body {
 #cloud3 {
   transform: translate(-60%, 120%);
 }
+
 
 #cloud-b1 {
   transform: translate(40%, -140%);
@@ -190,7 +197,9 @@ header a:hover {
   #me h1{
     font-size: 4.4rem;
   }
+}
 
+@media only screen and (max-width: 715px) {
   .dot {
     display: none;
   }
