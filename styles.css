@@ -41,7 +41,6 @@ body {
   height: 100vh;
   transform: translate(25%, 5%);
 
-  pointer-events: none;
 }
 
 img {
@@ -258,10 +257,10 @@ header a:hover {
     opacity:0.2;
   } 
   77% {
-    opacity:.9;
+    opacity:0.9;
   }
   100% {
-    opacity:.9;
+    opacity:0.9;
   }
 }
 
