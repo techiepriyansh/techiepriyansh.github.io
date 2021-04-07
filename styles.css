@@ -17,7 +17,6 @@ body {
   margin: 0;
   background: #151D21;
   background-image: linear-gradient(to bottom right, #2d2d2d, #151d21);
-  /*background-image: url('images/bg.png');*/
   color: white;
 }
 
