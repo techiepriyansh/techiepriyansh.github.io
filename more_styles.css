@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -15,11 +16,13 @@ body {
   font: 2.2rem 'Roboto Thin';
   padding: 0;
   margin: 0;
-  background: #151D21;
-  background-image: linear-gradient(to bottom right, #2d2d2d, #151d21);
+  background: #444444;
   color: white;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
 
 .header-container {
   width: 100%;
@@ -37,25 +40,102 @@ body {
   flex-direction: column;
   /*align-items: center;*/
   justify-content: center;
+
 }
 
 #skills {
   margin-top: 80px;
 }
 
-#skill-bars-container {
-  margin-top: 40px;
-  display: grid;
-  font-size: 1.8rem;
-  grid-template-columns: 1fr 7fr;
+h2 {
+  transform: translateX(2%);
 }
 
-#skill-bars-container div{
-  padding: 10px 10px 0 0;
+#skill-bars-container {
+  /*margin-top: 40px;*/
+  display: grid;
+  align-items: center;
+  font-size: 2rem;
+  grid-template-columns: 1fr 7fr;
+  transform: translateX(2%);
+}
+
+.skill-name {
+  margin: 10px 0 10px 0;
+  color: #f0f8ff;
+}
+
+.categ {
+  margin: 10px 0 10px 0;
+  color: #f0f8ff;
+}
+
+
+.skill-bar {
+  width: 100%;
+  height: 50%;
+  margin: 10px 0 10px 10px;
+  background-color: rgb(100,100,100);
+}
+
+#lang-python {
+  width: 80%;
+}
+#lang-python::before {
+  content: '80%';
+  font: 'Arial' 1.8rem;
+  font-weight: 2;
+}
+
+#lang-javascript {
+  width: 80%;
+}
+#lang-javascript::before{
+  content: '80%';
+  font: 'Arial' 1.8rem;
+  font-weight: 2;
+}
+
+#lang-java {
+  width: 60%;
+}
+#lang-java::before {
+  content: '60%';
+  font: 'Arial' 1.8rem;
+  font-weight: 2;
+}
+
+#lang-c {
+  width: 50%;
+}
+#lang-c::before {
+  content: '50%';
+  font: 'Arial' 1.8rem;
+  font-weight: 2;
 }
 
 #feats {
   margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.feats-container {
+  display: grid;
+  align-items: center;
+  font-size: 2rem;
+  grid-template-columns: 1fr 1fr;
+  transform: translateX(2%);
+}
+
+.rank {
+  font-size: 1.5rem;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#kvpy {
+}
+
+#ntse {
 }
 
 header {
@@ -94,12 +174,6 @@ header a:hover {
   animation: flicker 10s linear 3s infinite;
 }
 
-
-#tag1 {
-  opacity: 0;
-  animation: appear 0.5s ease-out 0.5s;
-  animation-fill-mode: forwards;
-}
 
 .container h1{
   padding: 0;
@@ -160,19 +234,11 @@ header a:hover {
 }
 
 @media only screen and (max-width: 525px) {
-  #me h1{
-    font-size: 4.4rem;
+  .feats-container {
+    font-size: 1.4rem;
   }
-}
-
-@media only screen and (max-width: 715px) {
-  .dot {
-    display: none;
-  }
-
-  #tags {
-    display: flex;
-    flex-direction: column;
+  .rank {
+    font-size: 1.2rem;
   }
 }
 
