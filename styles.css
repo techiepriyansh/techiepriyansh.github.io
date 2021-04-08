@@ -215,6 +215,24 @@ header a:hover {
   background: rgba(158,158,158,0.25);
 }
 
+#about a {
+  align-self: center;
+  color: #151D21;
+  background: #ff7a7a;
+  border-radius: 5px;
+  border: none;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: transform 250ms ease-out;
+}
+
+#about a:hover {
+  background: #ffffff;
+  transform: scaleX(1.1);
+}
+
+
 
 @keyframes appear{
   0% {opacity: 0;}
