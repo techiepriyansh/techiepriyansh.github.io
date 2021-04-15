@@ -122,6 +122,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: rgb(65 65 65 / 25%);
 }
 
 .container {
