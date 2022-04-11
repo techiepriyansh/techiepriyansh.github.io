@@ -1,75 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta name="charset" content="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Priyansh's Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Priyansh Rathi</title>
+
+    <style>
+        @font-face {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Raleway'), local('Raleway-Regular'),
+                url('fonts/raleway-v14-latin-regular.woff2') format('woff2'),
+                url('fonts/raleway-v14-latin-regular.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Source Code Pro';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Source Code Pro Regular'), local('SourceCodePro-Regular'),
+                url('fonts/source-code-pro-v11-latin-regular.woff2') format('woff2'),
+                url('fonts/source-code-pro-v11-latin-regular.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Bitter';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Bitter Regular'), local('Bitter-Regular'),
+                url('fonts/bitter-v15-latin-regular.woff2') format('woff2'),
+                url('fonts/bitter-v15-latin-regular.woff') format('woff');
+        }
+    </style>
+
+    <style>
+        .container {
+            width: auto;
+            max-width: 700px;
+            padding: 0 15px;
+            margin: 80px auto;
+        }
+
+        body {
+            font-family: "Raleway", sans-serif;
+            line-height: 1.4;
+            font-size: 16px;
+            color: #454545;
+        }
+
+        h1, h2, h3 {
+            font-family: "Bitter", serif;
+        }
+
+        code {
+            font-family: "Source Code Pro", monospace;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: #00a2e7
+        }
+
+        a:visited {
+            color: #45c272
+        }
+
+        #email {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
+
 <body>
-  
-  <div class="bg">
-    <div class="svg-container">
-      <img id="moon" src="./images/moon.svg">
-      <img id="moonlight" src="./images/moonlight.svg">
-      <img src="./images/b_cloud01.svg" class="cloud" id="cloud-b1">
-      <img src="./images/b_cloud02.svg" class="cloud" id="cloud-b2">
-      <img src="./images/cloud1.svg" class="cloud" id="cloud1">
-      <img src="./images/cloud2.svg" class="cloud" id="cloud2">
-      <img src="./images/cloud3.svg" class="cloud" id="cloud3">
-    </div>
-  </div>
-
-  <header>
-    <div class="header-container">
-      <div id="alias">
-        <a href="#me">heisen</a>
-      </div>
-      <div id="nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="https://i.ytimg.com/vi/IJJM_ccGxSQ/maxresdefault.jpg">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-
-  <section id="me">
     <div class="container">
-      <h1>
-        Priyansh
-        <br>
-        Rathi
-      </h1>
-      <p id="tags"> 
-        <span id="tag1">
-        haccer
-        </span>
-        <span class="dot" id="dot1"> &#8729; </span>
-        <span id="tag2">  
-        tinkerer
-        </span>
-        <span class="dot" id="dot2"> &#8729; </span>
-        <span id="tag3">
-        developer
-        <span>
-      </p>
-    </div>
-  </section>
+        <h1 id="priyansh-rathi">Priyansh Rathi</h1>
+        <p>
+            Hi, I'm a computer enthusiast currently studying at IIT Roorkee. 
+            <br/>I'm into Graphics Programming, Cryptography and low level stuff.
+        </p>
+        <p>
+            I am <i>techiepriyansh</i> on <a href="https://github.com/techiepriyansh" rel="me">GitHub</a>.
+        </p>
+        <p>
+            I am a member of <a href="https://sdslabs.co/"> SDSLabs </a> and the CTF team <a href="https://ctftime.org/team/16691/">InfoSecIITR</a>.
+        </p>
 
-  <section id="about">
-    <div class="container">
-      <h1>
-        Hi!
-      </h1>
-      <p>
-        I am a Computer Enthusiast currently studying in IIT Roorkee, India. 
-        <br>
-        I love computers, music and anime. 
-      </p>
-      <a class="more-btn" href="more.html">Learn more</a>
-    </div>
-  </section>
+        <h2 id="projects">Projects</h2>
+        <p>
+            <a href="https://github.com/techiepriyansh/detect-tls-traffic">Detect TLS Traffic</a>
+            <br>A utility to detect processes communicating via the TLS protocol
+        </p>
+        <p>
+            <a href="https://github.com/sdslabs/Rootex">Rootex</a>
+            <br>An advanced C++ 3D game engine based on ECS Architecture
+        </p>
+        <p>
+            <a href="https://github.com/techiepriyansh/ksa-autogen">TreeAdderAutoGen</a>
+            <br>A utility to auto-generate verilog code for arbitrary NxN parallel prefix adders
+        </p>
 
-</body>
-</html>
+        <h2 id="addresses">Contact</h2>
+        <p>
+            <code><a href="mailto:techiepriyansh@gmail.com" id="email">techiepriyansh&commat;gmail.com</a></code>
+        </p>
+    </div>
